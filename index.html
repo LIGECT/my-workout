@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой трекер тренировок</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Мой трекер тренировок</h1>
+
+    <label for="training-date">Выберите дату:</label>
+    <input type="date" id="training-date" />
+
+    <label for="week-number">Введите номер недели:</label>
+    <input type="number" id="week-number" placeholder="Номер недели" min="1" />
+
+    <table id="workout-table">
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Неделя</th>
+          <th>Упражнение</th>
+          <th>Подходы</th>
+          <th>Повторения</th>
+          <th>Фактический вес</th>
+          <th>Комментарии</th>
+          <th>Время тренировки</th>
+        </tr>
+      </thead>
+      <tbody id="workout-table-body">
+        <!-- Строки добавляются динамически -->
+      </tbody>
+    </table>
+
+    <button id="add-training">Добавить тренировку</button>
+    <button id="remove-training">Удалить последнюю тренировку</button>
+    <button id="prev-week">Предыдущая неделя</button>
+    <button id="next-week">Следующая неделя</button>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

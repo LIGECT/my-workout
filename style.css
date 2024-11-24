@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-image: url('metal-background.jpg');
+    /* Замените на путь к вашему изображению */
+    background-size: cover;
+    /* Заполнение фона */
+    background-color: #1a1a1a;
+    /* Темно-серый фон на случай, если изображение не загрузится */
+    color: #f9d74b;
+    /* Ярко-желтый цвет текста */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    /* Увеличен размер шрифта */
+    color: #f9d74b;
+    /* Ярко-желтый цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Тень для выделения текста */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Полупрозрачный черный фон */
+    padding: 10px;
+    /* Отступы вокруг текста */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #f9d74b;
+    /* Ярко-желтый цвет текста меток */
+}
+
+input[type="date"],
+input[type="number"],
+select,
+input[type="text"] {
+    width: calc(100% - 20px);
+    /* Ширина с учетом отступов */
+    padding: 10px;
+    /* Отступы внутри поля ввода */
+    margin-top: 5px;
+    /* Отступ сверху для отделения от заголовка поля */
+    border-radius: 5px;
+    /* Скругленные углы */
+    border: 2px solid #f9d74b;
+    /* Желтая граница */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Полупрозрачный белый фон для полей ввода */
+    color: #f9d74b;
+    /* Цвет текста в полях ввода */
+    font-size: 16px;
+    /* Размер шрифта в полях ввода */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:hover {
+    outline: none;
+    /* Убираем обводку по умолчанию при фокусе */
+    border-color: #e6c300;
+    /* Изменение цвета границы при фокусе или наведении */
+}
+
+/* Стили для кнопок */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    /* Увеличен размер шрифта кнопки */
+    background-color: #f9d74b;
+    /* Желтый фон кнопки */
+    color: black;
+    /* Черный цвет текста кнопки */
+    border: none;
+    /* Убираем границу */
+    cursor: pointer;
+    /* Изменяем курсор при наведении */
+    transition: background-color 0.3s ease;
+    /* Плавный переход цвета фона */
+}
+
+button:hover {
+    background-color: #e6c300;
+    /* Темнее желтый при наведении */
+}
+
+/* Анимация для выпадающих списков */
+.exercise-select {
+    transition: transform 0.3s ease-in-out;
+}
+
+.exercise-select:hover {
+    transform: scale(1.05);
+    /* Увеличение при наведении */
+}
+/* Добавим стиль для навигации между неделями */
+#week-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#week-navigation button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f9d74b;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#week-navigation button:hover {
+    background-color: #e6c300;
+}
